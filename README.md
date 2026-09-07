@@ -45,3 +45,25 @@ Cybersecurity concepts used:
 •	Session management 
 •	Audit logs 
 •	Incident severity & prioritization
+
+Pipe line:
+
+1. User views the log in page
+        ↓
+2. Dashboard is visible
+        ↓
+3. User can report a cybersecurity incident
+        ↓
+4. Incident gets stored in the database
+        ↓
+5. Admin/authorized person reviews it
+        ↓
+6. Incident is assigned to someone
+        ↓
+7. Person investigates and updates it
+        ↓
+8. Status changes until it's resolved
+        ↓
+9. Every action is recorded
+        ↓
+10. Dashboard shows the overall security situation
