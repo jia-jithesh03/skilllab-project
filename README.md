@@ -1,4 +1,4 @@
-# skilllab-project
+<img width="664" height="1600" alt="image" src="https://github.com/user-attachments/assets/27c487c4-77ec-420f-a34d-cdbd3327e8ec" /># skilllab-project
 Jia.Jithesh-1CD25CS091
 
 Project: Cyber Incident Management System
@@ -70,11 +70,17 @@ Pipe line:
 
 
 
-Preview of the UI 
+Preview of the UI (made by me)
 
 <img width="1365" height="594" alt="image" src="https://github.com/user-attachments/assets/50499e49-83d7-43b2-9361-abf76d4ba154" />
 
 https://www.figma.com/proto/E4VR1jUdWg2qLhkUVjKjNS/Untitled?node-id=2-3&p=f&t=UCnXniZTIDXR1kEq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3
 
 ^^ click login --> click report
+
+Preview of the UI (made by AI)
+
+<img width="570" height="414" alt="image" src="https://github.com/user-attachments/assets/c972123c-5a24-4f31-b197-b00dc6db1a86" />
+https://stitch.withgoogle.com/projects/17363277845261764396?pli=1
+
 
