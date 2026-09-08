@@ -1,4 +1,4 @@
-<img width="664" height="1600" alt="image" src="https://github.com/user-attachments/assets/27c487c4-77ec-420f-a34d-cdbd3327e8ec" /># skilllab-project
+skilllab-project
 Jia.Jithesh-1CD25CS091
 
 Project: Cyber Incident Management System
