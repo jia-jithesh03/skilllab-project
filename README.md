@@ -67,3 +67,14 @@ Pipe line:
 9. Every action is recorded
         ↓
 10. Dashboard shows the overall security situation
+
+
+
+Preview of the UI 
+
+<img width="1365" height="594" alt="image" src="https://github.com/user-attachments/assets/50499e49-83d7-43b2-9361-abf76d4ba154" />
+
+https://www.figma.com/proto/E4VR1jUdWg2qLhkUVjKjNS/Untitled?node-id=2-3&p=f&t=UCnXniZTIDXR1kEq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3
+
+^^ click login --> click report
+
