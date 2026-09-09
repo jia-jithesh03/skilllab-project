@@ -1,0 +1,548 @@
+/* =====================================================
+   CYBER WATCH
+   Global Styles
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background: #171717;
+    color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+   COMMON APP CONTAINER
+===================================================== */
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #241a1b;
+}
+
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #171717;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    background: #4b2527;
+    position: relative;
+    overflow: hidden;
+    padding: 25px 8px;
+}
+
+
+/* BIG TITLE */
+
+.brand-title {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: clamp(55px, 15vw, 95px);
+    line-height: 0.83;
+    letter-spacing: -2px;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 18px;
+    margin-top: 0;
+}
+
+
+/* LOGIN FORM */
+
+.login-form {
+    width: 92%;
+    margin: 28px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.login-form input {
+    width: 100%;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #dddddd;
+    color: #222222;
+    text-align: center;
+    font-size: 11px;
+}
+
+.login-form input::placeholder {
+    color: #222222;
+    opacity: 1;
+}
+
+.login-form button {
+    width: 78px;
+    height: 24px;
+    margin-top: 2px;
+    border-radius: 20px;
+    border: 1px solid #777777;
+    background: #dddddd;
+    color: #222222;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #ffffff;
+}
+
+
+
+/* =====================================================
+   DECORATIVE DETECTIVE
+===================================================== */
+
+.detective {
+    position: absolute;
+    width: 260px;
+    height: auto;
+    right: -25px;
+    bottom: -10px;
+}
+
+.detective img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SIMPLE CHARACTER */
+
+.person {
+    position: absolute;
+    width: 190px;
+    height: 160px;
+    left: 55px;
+    top: 130px;
+}
+
+.head {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #dddddd;
+    border-radius: 50%;
+    right: 30px;
+    top: 5px;
+}
+
+.body {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: #999999;
+    right: 5px;
+    top: 35px;
+    border-radius: 45% 45% 0 0;
+    transform: rotate(-12deg);
+}
+
+.arm {
+    position: absolute;
+    width: 80px;
+    height: 22px;
+    background: #dddddd;
+    left: 5px;
+    top: 45px;
+    border-radius: 20px;
+    transform: rotate(-55deg);
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    height: 55px;
+    border-bottom: 1px solid #777777;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 7px;
+}
+
+
+/* SMALL LOGO */
+
+.nav-logo {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 12px;
+    line-height: 0.8;
+    color: white;
+    width: 42px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    gap: 7px;
+    flex: 1;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #eeeeee;
+    border: 1px solid #555052;
+    border-radius: 20px;
+    padding: 5px 13px;
+    font-size: 7px;
+    white-space: nowrap;
+}
+
+.nav-button:hover,
+.nav-button.active {
+    background: #eeeeee;
+    color: #241a1b;
+}
+
+
+/* ADMIN */
+
+.admin {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 8px;
+}
+
+.user-icon {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #dddddd;
+    overflow: hidden;
+}
+
+.user-head {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #555555;
+    border-radius: 50%;
+    left: 7px;
+    top: 4px;
+}
+
+.user-body {
+    position: absolute;
+    width: 15px;
+    height: 9px;
+    background: #555555;
+    border-radius: 10px 10px 0 0;
+    left: 4px;
+    bottom: 2px;
+}
+
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.dashboard {
+    padding: 25px 10px;
+}
+
+.dashboard h2,
+.report-page h2 {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+
+/* STATISTICS */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 10px;
+}
+
+.stat-card {
+    height: 120px;
+    border: 1px solid #4d4748;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-number {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+
+/* RECENT INCIDENTS */
+
+.recent-section {
+    margin-top: 24px;
+}
+
+.recent-section h2 {
+    margin-bottom: 15px;
+}
+
+.incident-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.incident-card {
+    height: 190px;
+    border: 1px solid #4d4748;
+    border-radius: 14px;
+    padding: 12px 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.incident-type {
+    font-size: 7px;
+    margin-bottom: 2px;
+}
+
+.incident-date {
+    font-size: 6px;
+    color: #bbbbbb;
+}
+
+.incident-severity {
+    position: absolute;
+    top: 113px;
+    left: 7px;
+    font-family: "Courier New", monospace;
+    font-size: 8px;
+}
+
+.incident-arrow {
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #dddddd;
+}
+
+
+/* PAGINATION */
+
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #aaaaaa;
+    font-size: 8px;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #888888;
+}
+
+.active-dot {
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   REPORT PAGE
+===================================================== */
+
+.report-page {
+    padding: 12px 10px 20px;
+}
+
+.report-page h2 {
+    margin-bottom: 20px;
+}
+
+
+/* FORM */
+
+.incident-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group > label {
+    font-size: 8px;
+    color: #eeeeee;
+}
+
+
+/* SELECT */
+
+select {
+    width: 100%;
+    height: 27px;
+    border: none;
+    border-radius: 15px;
+    background: #555354;
+    color: #eeeeee;
+    padding: 0 9px;
+    font-size: 8px;
+    outline: none;
+}
+
+
+/* SEVERITY */
+
+.severity-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px;
+}
+
+.severity-options label {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.severity-options input {
+    appearance: none;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+}
+
+.severity-options input:checked {
+    background: #eeeeee;
+    box-shadow: inset 0 0 0 1px #555354;
+}
+
+
+/* DATE + TIME */
+
+input[type="date"],
+input[type="time"] {
+    height: 27px;
+    width: 105px;
+    border: 1px solid #555052;
+    border-radius: 15px;
+    background: #555354;
+    color: #eeeeee;
+    padding: 0 8px;
+    font-size: 8px;
+    outline: none;
+}
+
+
+/* DESCRIPTION */
+
+textarea {
+    width: 100%;
+    height: 130px;
+    resize: vertical;
+    border: 1px solid #555052;
+    border-radius: 20px;
+    background: transparent;
+    color: #eeeeee;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #777777;
+}
+
+
+/* SUBMIT */
+
+.submit-button {
+    width: 100px;
+    height: 24px;
+    align-self: center;
+    border-radius: 15px;
+    border: 1px solid #777777;
+    background: #555354;
+    color: #eeeeee;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #eeeeee;
+    color: #241a1b;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (min-width: 600px) {
+
+    .login-container,
+    .app {
+        min-height: 700px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #777777;
+    }
+
+    .login-body {
+        align-items: flex-start;
+    }
+
+}
