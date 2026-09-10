@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,171 +10,208 @@
 
 <body>
 
-    <div class="app">
+<div class="app">
 
-        <!-- NAVBAR -->
-        <nav class="navbar">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
 
-            <div class="nav-logo">
-                CYBER<br>WATCH
+        <div class="nav-logo">
+            CYBER<br>
+            WATCH
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html" class="nav-button">
+                DASHBOARD
+            </a>
+
+            <a href="report.html" class="nav-button active">
+                REPORT
+            </a>
+
+            <a href="#" class="nav-button">
+                LOG
+            </a>
+
+        </div>
+
+        <div class="admin">
+
+            <span>ADMIN</span>
+
+            <div class="user-icon">
+                <div class="user-head"></div>
+                <div class="user-body"></div>
             </div>
 
-            <div class="nav-links">
+        </div>
 
-                <a href="dashboard.html" class="nav-button">
-                    DASHBOARD
-                </a>
+    </nav>
 
-                <a href="report.html" class="nav-button active">
-                    REPORT
-                </a>
 
-                <a href="#" class="nav-button">
-                    LOG
-                </a>
+    <!-- REPORT PAGE -->
+    <main class="report-page">
+
+        <h2>REPORT INCIDENT</h2>
+
+
+        <form class="incident-form" action="dashboard.html">
+
+            <!-- INCIDENT TYPE -->
+            <div class="form-group">
+
+                <label for="incident-type">
+                    INCIDENT TYPE
+                </label>
+
+                <select id="incident-type" required>
+
+                    <option value="" selected disabled>
+                        Select type
+                    </option>
+
+                    <option>
+                        Phishing
+                    </option>
+
+                    <option>
+                        Malware
+                    </option>
+
+                    <option>
+                        Unauthorized Access
+                    </option>
+
+                    <option>
+                        Data Breach
+                    </option>
+
+                    <option>
+                        Suspicious Activity
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+
+                </select>
 
             </div>
 
-            <div class="admin">
 
-                <span>ADMIN</span>
+            <!-- SEVERITY -->
+            <div class="form-group">
 
-                <div class="user-icon">
-                    <div class="user-head"></div>
-                    <div class="user-body"></div>
+                <label>
+                    SEVERITY
+                </label>
+
+                <div class="severity-options">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="severity"
+                            value="Low"
+                            required
+                        >
+                        Low
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="severity"
+                            value="Medium"
+                        >
+                        Medium
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="severity"
+                            value="High"
+                        >
+                        High
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="severity"
+                            value="Critical"
+                        >
+                        Critical
+                    </label>
+
                 </div>
 
             </div>
 
-        </nav>
 
+            <!-- DATE -->
+            <div class="form-group">
 
-        <!-- REPORT FORM -->
-        <main class="report-page">
+                <label for="date">
+                    DATE
+                </label>
 
-            <h2>REPORT INCIDENT</h2>
-
-            <form class="incident-form" action="dashboard.html">
-
-
-                <!-- INCIDENT TYPE -->
-                <div class="form-group">
-
-                    <label for="incident-type">
-                        INCIDENT TYPE
-                    </label>
-
-                    <select id="incident-type" required>
-
-                        <option value="" selected disabled>
-                            Select type
-                        </option>
-
-                        <option>Phishing</option>
-                        <option>Malware</option>
-                        <option>Unauthorized Access</option>
-                        <option>Data Breach</option>
-                        <option>Suspicious Activity</option>
-                        <option>Other</option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- SEVERITY -->
-                <div class="form-group">
-
-                    <label>SEVERITY</label>
-
-                    <div class="severity-options">
-
-                        <label>
-                            <input type="radio" name="severity" required>
-                            Low
-                        </label>
-
-                        <label>
-                            <input type="radio" name="severity">
-                            Medium
-                        </label>
-
-                        <label>
-                            <input type="radio" name="severity">
-                            High
-                        </label>
-
-                        <label>
-                            <input type="radio" name="severity">
-                            Critical
-                        </label>
-
-                    </div>
-
-                </div>
-
-
-                <!-- DATE -->
-                <div class="form-group">
-
-                    <label for="date">
-                        DATE
-                    </label>
-
-                    <input
-                        type="date"
-                        id="date"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- TIME -->
-                <div class="form-group">
-
-                    <label for="time">
-                        TIME
-                    </label>
-
-                    <input
-                        type="time"
-                        id="time"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- DESCRIPTION -->
-                <div class="form-group">
-
-                    <label for="description">
-                        DESCRIPTION
-                    </label>
-
-                    <textarea
-                        id="description"
-                        placeholder="Describe what happened..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <!-- SUBMIT -->
-                <button
-                    type="submit"
-                    class="submit-button"
+                <input
+                    type="date"
+                    id="date"
+                    required
                 >
-                    SUBMIT
-                </button>
 
-            </form>
+            </div>
 
-        </main>
 
-    </div>
+            <!-- TIME -->
+            <div class="form-group">
 
+                <label for="time">
+                    TIME
+                </label>
+
+                <input
+                    type="time"
+                    id="time"
+                    required
+                >
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <div class="form-group">
+
+                <label for="description">
+                    DESCRIPTION
+                </label>
+
+                <textarea
+                    id="description"
+                    placeholder="Describe what happened..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="submit-button"
+            >
+                SUBMIT
+            </button>
+
+        </form>
+
+    </main>
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>

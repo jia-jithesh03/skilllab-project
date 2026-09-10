@@ -1,6 +1,5 @@
 /* =====================================================
-   CYBER WATCH
-   Global Styles
+   GLOBAL
 ===================================================== */
 
 * {
@@ -9,20 +8,15 @@
     padding: 0;
 }
 
-html,
-body {
-    min-height: 100%;
-}
-
 body {
     background: #171717;
-    color: #eeeeee;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
 
 /* =====================================================
-   COMMON APP CONTAINER
+   APP
 ===================================================== */
 
 .app {
@@ -50,64 +44,89 @@ body {
     width: 100%;
     max-width: 430px;
     min-height: 100vh;
+
     background: #4b2527;
+
     position: relative;
     overflow: hidden;
+
     padding: 25px 8px;
 }
 
 
-/* BIG TITLE */
+/* =====================================================
+   CYBER WATCH TITLE
+===================================================== */
 
 .brand-title {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
     font-size: clamp(55px, 15vw, 95px);
+
     line-height: 0.83;
-    letter-spacing: -2px;
-    color: #ffffff;
-    text-align: left;
+
+    color: white;
+
     margin-left: 18px;
     margin-top: 0;
 }
 
 
-/* LOGIN FORM */
+/* =====================================================
+   LOGIN FORM
+===================================================== */
 
 .login-form {
     width: 92%;
-    margin: 28px auto 0;
+
+    margin: 30px auto 0;
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
+
     gap: 9px;
 }
 
 .login-form input {
     width: 100%;
     height: 34px;
+
     border: none;
-    outline: none;
     border-radius: 20px;
+
     background: #dddddd;
-    color: #222222;
+
+    color: #222;
+
     text-align: center;
+
     font-size: 11px;
+
+    outline: none;
 }
 
 .login-form input::placeholder {
-    color: #222222;
-    opacity: 1;
+    color: #555;
 }
 
 .login-form button {
     width: 78px;
     height: 24px;
-    margin-top: 2px;
+
+    border: none;
     border-radius: 20px;
-    border: 1px solid #777777;
+
     background: #dddddd;
-    color: #222222;
-    font-size: 9px;
+    color: #222;
+
+    font-size: 10px;
+
     cursor: pointer;
 }
 
@@ -116,65 +135,45 @@ body {
 }
 
 
-
 /* =====================================================
-   DECORATIVE DETECTIVE
+   DETECTIVE IMAGE
 ===================================================== */
 
 .detective {
     position: absolute;
+
     width: 260px;
-    height: auto;
+
     right: -25px;
     bottom: -10px;
+
+    animation: detective-float 3s ease-in-out infinite;
 }
 
 .detective img {
     width: 100%;
     height: auto;
+
     display: block;
 }
 
-/* SIMPLE CHARACTER */
 
-.person {
-    position: absolute;
-    width: 190px;
-    height: 160px;
-    left: 55px;
-    top: 130px;
-}
+/* Detective animation */
 
-.head {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background: #dddddd;
-    border-radius: 50%;
-    right: 30px;
-    top: 5px;
-}
+@keyframes detective-float {
 
-.body {
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    background: #999999;
-    right: 5px;
-    top: 35px;
-    border-radius: 45% 45% 0 0;
-    transform: rotate(-12deg);
-}
+    0% {
+        transform: translateY(0);
+    }
 
-.arm {
-    position: absolute;
-    width: 80px;
-    height: 22px;
-    background: #dddddd;
-    left: 5px;
-    top: 45px;
-    border-radius: 20px;
-    transform: rotate(-55deg);
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
 
 
@@ -184,86 +183,155 @@ body {
 
 .navbar {
     height: 55px;
-    border-bottom: 1px solid #777777;
+
     display: flex;
     align-items: center;
-    padding: 0 8px;
-    gap: 7px;
+
+    padding: 0 10px;
+
+    border-bottom: 1px solid #6b5556;
 }
 
 
-/* SMALL LOGO */
+/* Logo */
 
 .nav-logo {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 12px;
-    line-height: 0.8;
-    color: white;
-    width: 42px;
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: 13px;
+    line-height: 0.85;
+
+    width: 70px;
+
+    animation: logo-flicker 4s infinite;
 }
 
 
-/* NAV LINKS */
+/* Broken-light effect */
+
+@keyframes logo-flicker {
+
+    0%,
+    90%,
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    91% {
+        opacity: 0.3;
+        transform: translateX(-1px);
+    }
+
+    92% {
+        opacity: 1;
+        transform: translateX(1px);
+    }
+
+    93% {
+        opacity: 0;
+    }
+
+    94% {
+        opacity: 0.6;
+        transform: translateX(-1px);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Navigation links */
 
 .nav-links {
     display: flex;
-    gap: 7px;
+    gap: 5px;
+
     flex: 1;
+
+    justify-content: center;
 }
 
 .nav-button {
     text-decoration: none;
+
     color: #eeeeee;
-    border: 1px solid #555052;
-    border-radius: 20px;
-    padding: 5px 13px;
-    font-size: 7px;
-    white-space: nowrap;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 8px;
+
+    padding: 5px 9px;
+
+    border-radius: 15px;
+
+    border: 1px solid transparent;
 }
 
-.nav-button:hover,
 .nav-button.active {
-    background: #eeeeee;
+    background: #dddddd;
     color: #241a1b;
 }
 
 
-/* ADMIN */
+/* Admin */
 
 .admin {
     display: flex;
     align-items: center;
+
     gap: 5px;
-    font-size: 8px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 7px;
 }
 
+
+/* =====================================================
+   USER ICON
+===================================================== */
+
 .user-icon {
+    width: 20px;
+    height: 20px;
+
     position: relative;
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background: #dddddd;
-    overflow: hidden;
 }
 
 .user-head {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: #555555;
+    width: 7px;
+    height: 7px;
+
+    background: #dddddd;
+
     border-radius: 50%;
-    left: 7px;
-    top: 4px;
+
+    position: absolute;
+
+    top: 2px;
+    left: 6px;
 }
 
 .user-body {
+    width: 14px;
+    height: 8px;
+
+    background: #dddddd;
+
+    border-radius: 10px 10px 3px 3px;
+
     position: absolute;
-    width: 15px;
-    height: 9px;
-    background: #555555;
-    border-radius: 10px 10px 0 0;
-    left: 4px;
+
     bottom: 2px;
+    left: 3px;
 }
 
 
@@ -272,124 +340,152 @@ body {
 ===================================================== */
 
 .dashboard {
-    padding: 25px 10px;
+    padding: 22px 15px;
 }
 
 .dashboard h2,
 .report-page h2 {
     font-family: "Courier New", monospace;
-    font-size: 12px;
+
+    font-size: 15px;
+
     font-weight: normal;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
+
+    margin-bottom: 15px;
 }
 
 
-/* STATISTICS */
+/* =====================================================
+   STATISTICS
+===================================================== */
 
 .stats-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px 10px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 30px;
 }
 
 .stat-card {
     height: 120px;
-    border: 1px solid #4d4748;
-    border-radius: 18px;
+
+    background: #dddddd;
+
+    color: #241a1b;
+
+    border-radius: 12px;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
 }
 
 .stat-number {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 28px;
+
+    font-weight: bold;
 }
 
 .stat-label {
+    margin-top: 5px;
+
     font-family: "Courier New", monospace;
-    font-size: 10px;
-    letter-spacing: 0.5px;
+
+    font-size: 12px;
 }
 
 
-/* RECENT INCIDENTS */
-
-.recent-section {
-    margin-top: 24px;
-}
+/* =====================================================
+   RECENT INCIDENTS
+===================================================== */
 
 .recent-section h2 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .incident-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
 }
 
 .incident-card {
-    height: 190px;
-    border: 1px solid #4d4748;
-    border-radius: 14px;
-    padding: 12px 7px;
-    position: relative;
-    overflow: hidden;
+    min-height: 65px;
+
+    background: #dddddd;
+
+    color: #241a1b;
+
+    border-radius: 10px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr auto;
+
+    align-items: center;
+
+    padding: 10px 12px;
 }
 
 .incident-type {
-    font-size: 7px;
-    margin-bottom: 2px;
+    font-size: 9px;
+
+    font-weight: bold;
 }
 
 .incident-date {
-    font-size: 6px;
-    color: #bbbbbb;
+    font-size: 8px;
 }
 
 .incident-severity {
-    position: absolute;
-    top: 113px;
-    left: 7px;
-    font-family: "Courier New", monospace;
-    font-size: 8px;
+    font-size: 10px;
+
+    font-weight: bold;
 }
 
 .incident-arrow {
-    position: absolute;
-    bottom: 8px;
-    left: 4px;
-    font-size: 34px;
-    font-weight: bold;
-    color: #dddddd;
+    font-size: 16px;
 }
 
 
-/* PAGINATION */
+/* =====================================================
+   PAGINATION
+===================================================== */
 
 .pagination {
-    margin-top: 10px;
+    margin-top: 15px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    gap: 8px;
-    color: #aaaaaa;
-    font-size: 8px;
+
+    gap: 10px;
+
+    font-size: 10px;
 }
 
 .dot {
-    width: 3px;
-    height: 3px;
+    width: 6px;
+    height: 6px;
+
     border-radius: 50%;
-    background: #888888;
+
+    background: #777;
 }
 
 .active-dot {
-    background: #ffffff;
+    background: #eeeeee;
 }
 
 
@@ -398,132 +494,158 @@ body {
 ===================================================== */
 
 .report-page {
-    padding: 12px 10px 20px;
+    padding: 22px 18px;
 }
-
-.report-page h2 {
-    margin-bottom: 20px;
-}
-
-
-/* FORM */
 
 .incident-form {
     display: flex;
+
     flex-direction: column;
-    gap: 17px;
+
+    gap: 15px;
 }
 
 .form-group {
     display: flex;
+
     flex-direction: column;
-    gap: 8px;
+
+    gap: 6px;
 }
 
 .form-group > label {
-    font-size: 8px;
-    color: #eeeeee;
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
 }
 
 
-/* SELECT */
+/* =====================================================
+   SELECT
+===================================================== */
 
 select {
-    width: 100%;
-    height: 27px;
+    height: 35px;
+
     border: none;
-    border-radius: 15px;
-    background: #555354;
-    color: #eeeeee;
-    padding: 0 9px;
-    font-size: 8px;
+
+    border-radius: 8px;
+
+    padding: 0 10px;
+
+    font-size: 10px;
+
+    background: #dddddd;
+
+    color: #241a1b;
+
     outline: none;
 }
 
 
-/* SEVERITY */
+/* =====================================================
+   SEVERITY
+===================================================== */
 
 .severity-options {
     display: flex;
-    justify-content: space-between;
-    padding: 0 2px;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
 }
 
 .severity-options label {
-    font-size: 8px;
+    font-size: 10px;
+
     display: flex;
+
     align-items: center;
+
     gap: 4px;
 }
 
-.severity-options input {
-    appearance: none;
-    width: 6px;
-    height: 6px;
-    border: 1px solid #eeeeee;
-    border-radius: 50%;
-}
 
-.severity-options input:checked {
-    background: #eeeeee;
-    box-shadow: inset 0 0 0 1px #555354;
-}
-
-
-/* DATE + TIME */
+/* =====================================================
+   DATE + TIME
+===================================================== */
 
 input[type="date"],
 input[type="time"] {
-    height: 27px;
-    width: 105px;
-    border: 1px solid #555052;
-    border-radius: 15px;
-    background: #555354;
-    color: #eeeeee;
-    padding: 0 8px;
-    font-size: 8px;
+    height: 35px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 0 10px;
+
+    background: #dddddd;
+
+    color: #241a1b;
+
+    font-size: 10px;
+
     outline: none;
 }
 
 
-/* DESCRIPTION */
+/* =====================================================
+   DESCRIPTION
+===================================================== */
 
 textarea {
-    width: 100%;
-    height: 130px;
+    min-height: 120px;
+
     resize: vertical;
-    border: 1px solid #555052;
-    border-radius: 20px;
-    background: transparent;
-    color: #eeeeee;
-    padding: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px;
+
+    background: #dddddd;
+
+    color: #241a1b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
     outline: none;
 }
 
 textarea::placeholder {
-    color: #777777;
+    color: #555;
 }
 
 
-/* SUBMIT */
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
 
 .submit-button {
-    width: 100px;
-    height: 24px;
+    width: 90px;
+    height: 32px;
+
     align-self: center;
-    border-radius: 15px;
-    border: 1px solid #777777;
-    background: #555354;
-    color: #eeeeee;
-    font-size: 8px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #dddddd;
+
+    color: #241a1b;
+
+    font-size: 10px;
+
     cursor: pointer;
 }
 
 .submit-button:hover {
-    background: #eeeeee;
-    color: #241a1b;
+    background: white;
 }
 
 
@@ -533,12 +655,13 @@ textarea::placeholder {
 
 @media (min-width: 600px) {
 
-    .login-container,
-    .app {
+    .app,
+    .login-container {
         min-height: 700px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 1px solid #777777;
+
+        margin: 20px auto;
+
+        border-radius: 10px;
     }
 
     .login-body {

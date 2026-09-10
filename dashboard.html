@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,168 +10,166 @@
 
 <body>
 
-    <div class="app">
+<div class="app">
 
-        <!-- NAVBAR -->
-        <nav class="navbar">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
 
-            <div class="nav-logo">
-                CYBER<br>WATCH
+        <div class="nav-logo">
+            CYBER<br>
+            WATCH
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html" class="nav-button active">
+                DASHBOARD
+            </a>
+
+            <a href="report.html" class="nav-button">
+                REPORT
+            </a>
+
+            <a href="#" class="nav-button">
+                LOG
+            </a>
+        </div>
+
+        <div class="admin">
+            <span>ADMIN</span>
+
+            <div class="user-icon">
+                <div class="user-head"></div>
+                <div class="user-body"></div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- DASHBOARD -->
+    <main class="dashboard">
+
+        <h2>SECURITY OVERVIEW</h2>
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-number">24</span>
+                <span class="stat-label">TOTAL</span>
             </div>
 
-            <div class="nav-links">
-
-                <a href="dashboard.html" class="nav-button active">
-                    DASHBOARD
-                </a>
-
-                <a href="report.html" class="nav-button">
-                    REPORT
-                </a>
-
-                <a href="#" class="nav-button">
-                    LOG
-                </a>
-
+            <div class="stat-card">
+                <span class="stat-number">8</span>
+                <span class="stat-label">OPEN</span>
             </div>
 
-            <div class="admin">
-
-                <span>ADMIN</span>
-
-                <div class="user-icon">
-                    <div class="user-head"></div>
-                    <div class="user-body"></div>
-                </div>
-
+            <div class="stat-card">
+                <span class="stat-number">12</span>
+                <span class="stat-label">INVESTIGATING</span>
             </div>
 
-        </nav>
+            <div class="stat-card">
+                <span class="stat-number">4</span>
+                <span class="stat-label">RESOLVED</span>
+            </div>
+
+        </section>
 
 
-        <!-- MAIN CONTENT -->
-        <main class="dashboard">
+        <!-- RECENT INCIDENTS -->
+        <section class="recent-section">
 
-            <h2>SECURITY OVERVIEW</h2>
+            <h2>RECENT INCIDENTS</h2>
 
+            <div class="incident-grid">
 
-            <!-- STATISTICS -->
-            <section class="stats-grid">
+                <div class="incident-card">
 
-                <div class="stat-card">
-                    <span class="stat-number">24</span>
-                    <span class="stat-label">TOTAL</span>
-                </div>
-
-                <div class="stat-card">
-                    <span class="stat-number">8</span>
-                    <span class="stat-label">OPEN</span>
-                </div>
-
-                <div class="stat-card">
-                    <span class="stat-number">12</span>
-                    <span class="stat-label">INVESTIGATING</span>
-                </div>
-
-                <div class="stat-card">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">RESOLVED</span>
-                </div>
-
-            </section>
-
-
-            <!-- RECENT INCIDENTS -->
-            <section class="recent-section">
-
-                <h2>RECENT INCIDENTS</h2>
-
-                <div class="incident-grid">
-
-                    <div class="incident-card">
-
-                        <div class="incident-type">
-                            Phishing
-                        </div>
-
-                        <div class="incident-date">
-                            09/08/25
-                        </div>
-
-                        <div class="incident-severity">
-                            HIGH
-                        </div>
-
-                        <div class="incident-arrow">
-                            ➜
-                        </div>
-
+                    <div class="incident-type">
+                        Phishing
                     </div>
 
-
-                    <div class="incident-card">
-
-                        <div class="incident-type">
-                            Malware
-                        </div>
-
-                        <div class="incident-date">
-                            10/03/25
-                        </div>
-
-                        <div class="incident-severity">
-                            CRITICAL
-                        </div>
-
-                        <div class="incident-arrow">
-                            ➜
-                        </div>
-
+                    <div class="incident-date">
+                        09/08/25
                     </div>
 
+                    <div class="incident-severity">
+                        HIGH
+                    </div>
 
-                    <div class="incident-card">
-
-                        <div class="incident-type">
-                            Unauthorized
-                        </div>
-
-                        <div class="incident-date">
-                            11/01/25
-                        </div>
-
-                        <div class="incident-severity">
-                            MEDIUM
-                        </div>
-
-                        <div class="incident-arrow">
-                            ➜
-                        </div>
-
+                    <div class="incident-arrow">
+                        ➜
                     </div>
 
                 </div>
 
 
-                <!-- PAGINATION -->
-                <div class="pagination">
+                <div class="incident-card">
 
-                    <span>&lt;&lt;</span>
-                    <span>&lt;</span>
-                    <span class="dot active-dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span>&gt;</span>
-                    <span>&gt;&gt;</span>
+                    <div class="incident-type">
+                        Malware
+                    </div>
+
+                    <div class="incident-date">
+                        10/03/25
+                    </div>
+
+                    <div class="incident-severity">
+                        CRITICAL
+                    </div>
+
+                    <div class="incident-arrow">
+                        ➜
+                    </div>
 
                 </div>
 
-            </section>
 
-        </main>
+                <div class="incident-card">
 
-    </div>
+                    <div class="incident-type">
+                        Unauthorized
+                    </div>
 
+                    <div class="incident-date">
+                        11/01/25
+                    </div>
+
+                    <div class="incident-severity">
+                        MEDIUM
+                    </div>
+
+                    <div class="incident-arrow">
+                        ➜
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+
+                <span>&lt;&lt;</span>
+                <span>&lt;</span>
+
+                <span class="dot active-dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+                <span>&gt;</span>
+                <span>&gt;&gt;</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>
