@@ -83,4 +83,5 @@ Preview of the UI (made by AI)
 <img width="570" height="414" alt="image" src="https://github.com/user-attachments/assets/c972123c-5a24-4f31-b197-b00dc6db1a86" />
 https://stitch.withgoogle.com/projects/17363277845261764396?pli=1
 
+This is the live working website: https://jia-jithesh03.github.io/skilllab-project/
 
